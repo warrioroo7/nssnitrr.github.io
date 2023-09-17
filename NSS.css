@@ -1,0 +1,327 @@
+/* Default styles for larger screens */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logotext {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logonitrr {
+    margin-right: 20px;
+}
+
+.navitems {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navitems li {
+    margin-right: 20px;
+}
+
+.navitems li:last-child {
+    margin-right: 0;
+}
+
+.navitems li a {
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navitems li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.hometext {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.hometext h1 {
+    font-size: 2rem;
+    color: skyblue;
+}
+
+.base1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.base1 img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.ticks {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ticks1 {
+    margin-left: 20px;
+}
+
+.tickcolor {
+    color: blue;
+}
+
+.base2 {
+    background-color: rgb(244, 246, 248);
+    padding: 20px;
+}
+
+.base2 h1 {
+    text-align: center;
+}
+
+.heading {
+    font-size: 1.5rem;
+    color: blue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pic1 {
+    transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+}
+
+.pic1:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid silver;
+}
+
+.readmore:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.base2-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.heading1 {
+    font-size: 1.5rem;
+    color: blue;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.base2-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.base2-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.base3-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer {
+    background-color: rgb(4, 15, 40);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.foot1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.qucik {
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.fooot:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.icn:hover {
+    cursor: pointer;
+}
+
+/* Responsive styles for medium-sized screens (e.g., tablets) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .logotext {
+        margin-top: 10px;
+    }
+
+    .logonitrr {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .navitems {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navitems li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navitems li a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hometext {
+        padding: 20px 10px;
+    }
+
+    .base1 {
+        padding: 10px;
+    }
+
+    .base1 img {
+        margin: 10px 5px;
+    }
+
+    .base2-1,
+    .base2-2,
+    .base2-3 {
+        flex-direction: column;
+    }
+
+    .base2-1 img,
+    .base2-2 img,
+    .base2-3 img {
+        max-width: 100%;
+    }
+}
+
+/* Responsive styles for small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo,
+    .logotext,
+    .logonitrr {
+        margin: 10px;
+    }
+
+    .navitems li a {
+        padding: 10px;
+    }
+
+    .hometext h1 {
+        font-size: 1.5rem;
+    }
+
+    .base1 img {
+        margin: 10px;
+    }
+
+    .heading,
+    .heading1 {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        padding-top: 10px;
+    }
+
+    .qucik {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+}
+
+/* Further responsive adjustments for very small screens (e.g., tiny mobile devices) */
+@media (max-width: 320px) {
+    .logo,
+    .logotext,
+    .logonitrr {
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+
+    .navitems li a {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .hometext h1 {
+        font-size: 1.2rem;
+    }
+
+    .base1 img {
+        margin: 5px;
+    }
+
+    .heading,
+    .heading1 {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding-top: 5px;
+    }
+
+    .qucik {
+        font-size: 0.7rem;
+        margin-left: 5px;
+    }
+}

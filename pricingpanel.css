@@ -1,0 +1,19 @@
+.cnt{
+  background-color: black;
+  width: 90%;
+  height: 500px;
+  margin: 0px auto;
+  border: 5px solid ;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start;
+  flex-wrap: wrap; */
+}
+h1{
+  text-align: center;
+}
+.cnt div{
+  width: 200px;
+  height: 200px;
+}
